@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  align-items: center;
+}
+
+input {
+  height: 120px;
+  font-size: 2rem;
+  width: 80%;
+  padding-left: 10%;
+}
+
+button.add {
+  width: 20%;
+  cursor: pointer;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 120px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%;
+  margin: auto auto;
+  padding-top: 40px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  height: 80px;
+  width: 100%;
+  box-shadow: 0 0 20px #ccc;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+
+.item.clicked {
+  background: #d4f6d9;
+}
+
+.item.clicked .item-name {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.item-icon {
+  flex: 20%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.item-name {
+  flex: 55%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.item-button {
+  flex: 25%;
+}
+
+.delete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  height: 80px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.mdi-check-circle {
+  color: green;
+}
